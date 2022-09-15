@@ -1,0 +1,95 @@
+<!--Parte 1 -->
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Trabalhando com o Bootstrap</title>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<style type="text/css">
+		
+		#branco {
+			background-color:white;
+			height:100px;
+		}
+		#vermelho {
+			background-color:red;
+			height: 120px;
+		}
+		
+		#preto {
+			background-color:black;
+			min-height:400px; 
+		}
+		
+		#amarelo {
+			background-color:yellow;
+			min-height:400px; 
+		}
+		
+		#verde {
+			background-color:green;
+			height:100px;
+		}
+		
+		@media screen and (max-width:576px)
+			{
+			#branco {
+				height:30px;
+			}
+			#vermelho{
+				height:45px;
+			}
+			
+			
+			}
+		</style>
+	
+	</head>
+	<!--Parte 2 -->
+	<body>
+		<div class = "container-fluid"> <!--Variavel para ocupar toda a largura da tela -->
+		<!--Ao escrever o código em html pense na posição de cima para baixo e da esquerda para direita -->
+		<!--<div id= "preto"</div>
+		<div id= "amarelo"</div>
+		<div id= "verde" </div>
+		
+		Parte 2 -->
+		
+		
+		<div class= "row"><!--Parte 4:criar uma linha para separar as cores -->
+			<div id= "branco" class="col-sm-3 col-xs-12"></div> <!--Parte 5:criar quantas colunas cada linha vai ocupar -->
+			<!--Parte 7 col-xs-12 responsivo para dipositivos menores-->
+			<div id= "vermelho" class= "col-sm-9 col-xs-12"> </div><!--Parte 5:respeitando a a configuração do SM pra cima-->
+			<!--Parte 7 col-xs-12 responsivo para dipositivos menores-->
+		</div>
+		
+		<div class= "row"><!--Parte 4:criar uma linha para separar as cores -->
+			<div id= "preto" class="col-sm-10 col-xs-12"></div> <!--Parte 5:criar quantas colunas cada linha vai ocupar -->
+			<!--Parte 7 col-xs-12 responsivo para dipositivos menores-->
+			<div id= "amarelo" class= "col-sm-2 d-none d-sm-block"> </div><!--Parte 5:respeitando a a configuração do SM pra cima-->
+			<!--Parte 7 Amarelo não aparece d-none some em qualquer resolução e d-sm-block - aparecer somente no sm e não aparece no xs(smartphone)-->
+		</div>
+		
+		</div>
+		
+		<div class= "row"><!--Parte 4:criar uma linha para separar as cores -->
+			<div id= "verde" class="col-sm-10"></div> <!--Parte 5:criar quantas colunas cada linha vai ocupar -->
+		</div>
+		
+	
+		<!--Parte 2 <div id= "verde" </div>-->
+	
+	</body>
+
+   
+ 
+</html>
+
+
