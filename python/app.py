@@ -48,14 +48,16 @@ def devs_per_id (id):
 @app.route('/devs', methods=['POST'])
 def save_dev() :
     data = request.get_json()
-    devs.appends(data)
-    return 200
+    devs.append(data)
+    return jsonify(devs),200
 
-@app.route('/devs', methods=['DELETE'])
+@app.route('/devs/<int:id>', methods=['DELETE'])
 def remove_dev (id):
-    index = id -1
-    del devs[index]
-    return jsonify({'message': 'Dev is no longer alive'}), 200
+    for dev in devs:
+        if dev['id'] == id:
+            devs.remove(dev)
+            return jsonify({'message': 'dev is gone'})
+    return jsonify({'error': 'dev not found'}), 404
 
 if __name__ == '__main__' :
     app.run(debug=True)
