@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,10 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  userName = 'Joaquim';
-  userData = {
-    email: 'joa@qmail.com',
-    funcao: 'Admin'
-  }
-  title = 'curso-angular';
+  title = 'teste-angular';
 }

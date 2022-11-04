@@ -1,0 +1,5 @@
+<p>{{idade}}</p>
+<form [formGroup]="idadeForm" (ngSubmit)="onSubmit()">
+  <input formControlName="nasc" name="ano" placeholder="Digite o ano de nascimento:">
+  <input type="submit" value="Enviar">
+</form>
